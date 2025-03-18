@@ -3,31 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokédex</title>
+    <title>Galería de Fotos</title>
     <style>
-        body {
-            font-family: sans-serif;
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .photo {
+            width: 200px;
+            margin: 100px;
             text-align: center;
-            margin-top: 50px;
         }
-        .pokemon-card {
-            border: 1px solid #ccc;
-            padding: 20px;
-            margin: 20px auto;
-            width: 300px;
-            text-align: left;
-        }
-        .pokemon-card img {
+        .photo img {
             max-width: 100%;
-            height: auto;
+            height: 100%;
         }
     </style>
 </head>
 <body>
-    <h1>Pokédex</h1>
-    <input type="text" id="pokemonInput" placeholder="Nombre del Pokémon">
-    <button id="searchButton">Buscar</button>
-    <div id="pokemonInfo"></div>
-    <script src="poke.js"></script>
+    <h1>Galería de Fotos</h1>
+    <div id="gallery" class="gallery"></div>
+    <script src="consumo.js"></script>
 </body>
 </html>
